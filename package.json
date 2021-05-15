@@ -1,0 +1,18 @@
+{
+  "name": "td-health",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@e.coding.net:zdrgs/td-health/td-health.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
