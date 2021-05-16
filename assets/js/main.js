@@ -1,10 +1,3 @@
-/*--------------------------
-    Project Name: DataSoft
-    Version: 1.0
-    Author: 7oorof
-    Relase Date: February 2021
-更多精品模板：http://www.bootstrapmb.com
----------------------------*/
 /*---------------------------
       Table of Contents
     --------------------
