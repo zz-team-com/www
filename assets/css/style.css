@@ -7941,3 +7941,8 @@ input[type=radio] {
 	width : 165px;
 	height: 44px;
 }
+
+/* 隐藏轮播 */
+.slick-dots {
+	display: none;
+}
