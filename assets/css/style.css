@@ -7936,6 +7936,15 @@ input[type=radio] {
 
 /* 自定义 */
 
+.header-full .navbar-nav {
+	margin-top: 0;
+}
+
+.header-full .navbar {
+	height    : 80px;
+	max-height: 80px;
+}
+
 .logo-light,
 .logo-dark {
 	width : 165px;
@@ -7947,6 +7956,7 @@ input[type=radio] {
 	display: none;
 }
 
+/* 轮播图主标题大小 */
 .slider .slide__title {
 	font-size: 60px;
 }
