@@ -7940,6 +7940,7 @@ input[type=radio] {
 	margin-top: 0;
 }
 
+.navbar>.container,
 .header-full .navbar {
 	height    : 80px;
 	max-height: 80px;
@@ -7959,4 +7960,9 @@ input[type=radio] {
 /* 轮播图主标题大小 */
 .slider .slide__title {
 	font-size: 60px;
+}
+
+.footer .footer-primary {
+	padding-top   : 65px;
+	padding-bottom: 25px;
 }
