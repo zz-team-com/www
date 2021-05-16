@@ -7952,9 +7952,9 @@ input[type=radio] {
 }
 
 /* 隐藏轮播 */
-.slick-dots {
+/* .slick-dots {
 	display: none;
-}
+} */
 
 /* 轮播图主标题大小 */
 .slider .slide__title {
