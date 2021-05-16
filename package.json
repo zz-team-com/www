@@ -12,7 +12,5 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "http-server": "^0.12.3"
-  }
+  "devDependencies": {}
 }
