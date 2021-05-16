@@ -7946,3 +7946,7 @@ input[type=radio] {
 .slick-dots {
 	display: none;
 }
+
+.slider .slide__title {
+	font-size: 60px;
+}
