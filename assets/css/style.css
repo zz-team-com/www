@@ -7962,6 +7962,10 @@ input[type=radio] {
 	font-size: 60px;
 }
 
+.slider .slide__desc {
+	max-width: none;
+}
+
 .footer .footer-primary {
 	padding-top   : 65px;
 	padding-bottom: 25px;
