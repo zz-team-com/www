@@ -7936,6 +7936,12 @@ input[type=radio] {
 
 /* 自定义 */
 
+@media (max-width: 420px) {
+	.header .navbar-brand img {
+		max-width: none;
+	}
+}
+
 .header-full .navbar-nav {
 	margin-top: 0;
 }
