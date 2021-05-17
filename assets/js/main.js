@@ -21,6 +21,57 @@ $(function () {
 
     "use strict";
 
+    /**
+     * 判断是否为 `null`
+     * 
+     * @param {*} val 
+     * @returns {boolean}
+     */
+    function isNull(val) {
+        return val === null;
+    }
+
+    /**
+     * 判断是否为 `undefined`
+     * 
+     * @param {*} val 
+     * @returns {boolean}
+     */
+    function isUndefined(val) {
+        return typeof val === 'undefined';
+    }
+
+    /**
+     * Checks if value is null or undefined.
+     *
+     * @param {*} val
+     * @returns {boolean}
+     */
+    function isNil(val) {
+        return isNull(val) || isUndefined(val);
+    }
+
+    /**
+     * 判断是不是空值
+     * 
+     * `null` `undefined` 空字符串`""` 空数组`[]` 空对象`{}`
+     * 
+     * @param {unknown} val 
+     */
+    function isEmpty(val) {
+        if (isNil(val)) {
+            return true;
+        } else if (Array.isArray(val) && val.length === 0) {
+            return true;
+        } else if (typeof val === 'string' && val === '') {
+            return true;
+        } else if (val && Object.keys(val).length === 0 && val.constructor === Object) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     // Global variables
     var $win = $(window);
 
@@ -180,9 +231,24 @@ $(function () {
         submitHandler: function (contactForm) {
             $(contactResult, contactForm).html('预约中...');
 
+            var data = $(contactForm).serialize();
+            if (isEmpty($('#contact-name').val())) {
+                $(contactResult, contactForm).html('姓名不能为空。');
+                return;
+            }
+            if (isEmpty($('#contact-email').val()) && isEmpty($('#contact-phone').val())) {
+                $(contactResult, contactForm).html('邮箱和手机至少填写一个。');
+                return;
+            }
+            if (isEmpty($('#hospital-name').val())) {
+                $(contactResult, contactForm).html('医院不能为空。');
+                return;
+            }
+
             $.ajax({
                 type: "POST",
-                url: "/ab/c/c/c.com",
+                url: "http://115.29.143.48:880/api/system/appointment",
+
                 data: $(contactForm).serialize(),
                 timeout: 20000,
                 success: function (msg) {
