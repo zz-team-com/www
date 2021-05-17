@@ -174,20 +174,30 @@ $(function () {
     /*==========  Contact Form validation  ==========*/
     var contactForm = $("#contactForm"),
         contactResult = $('.contact-result');
+
     contactForm.validate({
         debug: false,
         submitHandler: function (contactForm) {
-            $(contactResult, contactForm).html('Please Wait...');
+            $(contactResult, contactForm).html('预约中...');
+
             $.ajax({
                 type: "POST",
-                url: "assets/php/contact.php",
+                url: "/ab/c/c/c.com",
                 data: $(contactForm).serialize(),
                 timeout: 20000,
                 success: function (msg) {
-                    $(contactResult, contactForm).html('<div class="alert alert-success" role="alert"><strong>Thank you. We will contact you shortly.</strong></div>').delay(3000).fadeOut(2000);
+                    $(contactResult, contactForm).html('预约成功。');
                 },
-                error: $('.thanks').show()
+                error: function () {
+                    $(contactResult, contactForm).html('预约失败。');
+                },
+                complete: function () {
+                    setTimeout(function () {
+                        $(contactResult, contactForm).html('');
+                    }, 2000);
+                }
             });
+
             return false;
         }
     });
