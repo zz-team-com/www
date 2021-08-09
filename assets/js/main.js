@@ -247,7 +247,7 @@ $(function () {
 
             $.ajax({
                 type: "POST",
-                url: "http://115.29.143.48:880/api/system/appointment",
+                url: "/api/system/appointment",
 
                 data: $(contactForm).serialize(),
                 timeout: 20000,
