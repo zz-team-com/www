@@ -1,6 +1,6 @@
-http://td-health.honeywen.com/
-http://td-health.honeywen.com/about-us.html
-http://td-health.honeywen.com/drg.html
-http://td-health.honeywen.com/index.html
-http://td-health.honeywen.com/kg.html
-http://td-health.honeywen.com/sdqc.html
+https://td-health.com/
+https://td-health.com/about-us.html
+https://td-health.com/drg.html
+https://td-health.com/index.html
+https://td-health.com/kg.html
+https://td-health.com/sdqc.html
