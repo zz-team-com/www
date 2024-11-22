@@ -1,9 +1,9 @@
 https://td-health.com/
-https://td-health.com/about-us.html
-https://td-health.com/drg.html
 https://td-health.com/index.html
+https://td-health.com/about-us.html
 https://td-health.com/kg.html
 https://td-health.com/sdqc.html
 https://td-health.com/vte.html
 https://td-health.com/mhqc.html
 https://td-health.com/odr.html
+https://td-health.com/djps.html
