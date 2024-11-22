@@ -7983,3 +7983,7 @@ input[type=radio] {
 	padding-top   : 65px;
 	padding-bottom: 25px;
 }
+
+#contact-us {
+	display: none;
+}
